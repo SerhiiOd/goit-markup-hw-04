@@ -19,11 +19,11 @@ html {
   box-sizing: border-box;
 }
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
+} */
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -55,6 +55,15 @@ ul {
 
 img {
   display: block;
+}
+
+/* Іконки */
+
+.icon-info {
+  background: #f5f4fa;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: var(--margin-content);
 }
 
 /* Розмітка */
@@ -128,6 +137,10 @@ img {
 .contact {
   display: flex;
   margin-left: auto;
+}
+
+.email-info {
+  margin-right: var(--margin-content);
 }
 
 .contact .item-info + .item-info {
@@ -348,6 +361,11 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-top: var(--margin-content);
   margin-right: var(--margin-content);
+}
+
+.mark-bg:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .bg-cont {
