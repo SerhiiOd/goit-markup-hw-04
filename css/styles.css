@@ -19,11 +19,11 @@ html {
   box-sizing: border-box;
 }
 
-/* *,
+*,
 *::before,
 *::after {
   box-sizing: inherit;
-} */
+}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -55,13 +55,6 @@ ul {
 
 img {
   display: block;
-}
-
-/* Іконки */
-
-.icon {
-  display: inline-block;
-  margin-right: 10px;
 }
 
 /* Розмітка */
@@ -215,19 +208,6 @@ img {
   overflow: hidden;
 }
 
-.box-icon {
-  width: 270px;
-  text-align: center;
-  background: #f5f4fa;
-  border-radius: 4px;
-  padding: 25px 0;
-  margin-bottom: var(--margin-content);
-}
-
-.icon-info-item {
-  display: inline-block;
-}
-
 .information {
   display: flex;
   margin-right: -30px;
@@ -319,21 +299,6 @@ img {
   margin-right: auto;
   margin-bottom: var(--margin-content);
   margin-left: auto;
-}
-
-/* Постійні клієнти */
-
-.post-client {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.logo-company-client {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 }
 
 /* Портфоліо */
