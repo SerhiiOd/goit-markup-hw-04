@@ -73,6 +73,9 @@ img {
 /* Logo-шрифт/колір */
 
 .page-header {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   border: 1px solid #ececec;
 }
 
@@ -147,19 +150,28 @@ img {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  fill: var(--color-text-contact);
 }
 
 .contact .info:hover,
 .contact .info:focus {
   color: var(--hover-focus-link-button);
+  fill: var(--hover-focus-link-button);
 }
 
 /* Банер index */
 
-.hero {
-  background: var(--background-color-sect);
-  text-align: center;
+.hero-overlay {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 200px 0;
+  text-align: center;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/overlay.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .baner-text {
@@ -170,6 +182,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .baner-button {
@@ -181,7 +194,6 @@ img {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
-  text-align: center;
   padding: 10px 32px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -331,8 +343,19 @@ img {
   justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: var(--color-text-title-button);
   border-radius: 50%;
+}
+
+.soc-link-people {
+  fill: #afb1b8;
+}
+
+.social-link:hover {
+  background-color: var(--hover-focus-link-button);
+}
+
+.social-link:hover svg {
+  fill: #ffffff;
 }
 
 /* Постійні клієнти */
@@ -356,6 +379,20 @@ img {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--hover-focus-link-button);
+}
+
+.icon-client {
+  fill: #afb1b8;
+}
+
+.client-link:hover .icon-client,
+.client-link:focus .icon-client {
+  fill: var(--hover-focus-link-button);
 }
 
 /* Портфоліо */
@@ -440,6 +477,9 @@ img {
 }
 
 .drop-info {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 60px 0;
   background: var(--background-color-sect);
 }
@@ -518,6 +558,15 @@ img {
   justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: var(--color-text-title-button);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+}
+
+.social-footer {
+  fill: #ffffff;
+}
+
+.soc-link:hover,
+.soc-link:focus {
+  background-color: var(--hover-focus-link-button);
 }
