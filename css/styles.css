@@ -340,21 +340,21 @@ img {
 .list-client {
   display: flex;
   gap: 30px;
-  
 }
 
 .logo-center {
-  display: flex;
-  justify-content: center;
   width: calc(100% - 150px / 6);
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+  height: 92px;
+  cursor: pointer;
 }
 
 .client-link {
   display: flex;
-  width: auto;
-  height: 92px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  justify-content: center;
   align-items: center;
 }
 
@@ -432,7 +432,12 @@ img {
   letter-spacing: 0.03em;
 }
 
-/* Підвал index portfolio */
+/* Підвал index portfolio - info */
+
+.foot-flex {
+  display: flex;
+  align-items: baseline;
+}
 
 .drop-info {
   padding: 60px 0;
@@ -449,12 +454,17 @@ img {
   font-style: normal;
 }
 
+.flogo {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .street {
   color: var(--text-color-logo-foot);
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  margin-top: 20px;
+
   margin-bottom: 9px;
 }
 
@@ -472,4 +482,42 @@ img {
 .foot-contact .foot-info:hover,
 .foot-contact .foot-info:focus {
   color: var(--hover-focus-link-button);
+}
+
+/* Підвал index portfolio - social-link */
+
+.box-join-use {
+  height: 80px;
+  width: auto;
+  margin-left: 70px;
+  display: block;
+}
+
+.join-use {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.foot-social-link {
+  display: flex;
+  justify-content: center;
+}
+
+.foot-soc-list:not(:first-child) {
+  margin-left: 10px;
+}
+
+.soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-text-title-button);
+  border-radius: 50%;
 }
