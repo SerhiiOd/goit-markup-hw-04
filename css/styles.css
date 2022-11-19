@@ -128,6 +128,9 @@ img {
   color: var(--hover-focus-link-button);
 }
 
+.item-info {
+}
+
 .contact {
   display: flex;
   margin-left: auto;
@@ -141,8 +144,9 @@ img {
   margin-right: 10px;
 }
 
-.contact .info {
-  display: block;
+.info {
+  display: flex;
+  align-items: center;
   color: var(--color-text-contact);
   font-weight: 500;
   font-size: 14px;
@@ -350,11 +354,13 @@ img {
   fill: #afb1b8;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--hover-focus-link-button);
 }
 
-.social-link:hover svg {
+.social-link:hover svg,
+.social-link:focus svg {
   fill: #ffffff;
 }
 
